@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+
+:root {
+--cyan: hsl(179, 62%, 43%);  
+--bright-yellow: hsl(71, 73%, 54%) ;
+--light-gray: hsl(204, 43%, 93%);
+--grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+    margin: 0;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 29%, 93%);
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading{
+    width: 700px;
+    height: 230px;
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    padding: 45px;
+}
+
+.priceSection{ 
+    width: 350px;
+    height: 270px;
+    background-color: var(--cyan);
+    border-radius: 0 0 0 12px;
+    padding: 45px;
+}
+
+.usSection{
+    width: 350px;
+    height: 270px;
+    background-color: hsl(179, 55%, 52%);
+    border-radius: 0 0 12px 0;
+    padding: 45px;
+}
+
+h4 { 
+    font-size: 1.15rem;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.heading__title{
+    font-size: 1.6rem;
+    margin: 0 0 27px 0;
+    color: var(--cyan);
+    
+}
+
+.heading__subTitle{
+    color: var(--bright-yellow);
+}
+
+.heading__paragraph {
+    color:var(--grayish-blue);
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    max-width: 570px;
+    margin-top: 12px;
+}
+
+.priceSection__priceLine{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.priceSection__price{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    
+}
+.priceSection__period{
+    color: rgb(255, 255, 255, 0.5);
+    margin-left: 10px;
+    font-weight: 700;
+
+}
+.priceSection__paragraph{
+    color:white;
+    margin: 10px 0 25px 0;
+    font-size: 1.06rem;
+}
+.priceSection__btn{
+    color: white;
+    width: 260px;
+    height: 52px;
+    border:none;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: rgba(17, 17, 26, 0.01) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.01) 0px 16px 56px;
+}
+
+.usSection__paragraph{
+    color: rgb(255, 255, 255, 0.8);
+    max-width: 210px;
+
+}
+
+@media(max-width:702px){
+
+    .container{ height: 100%;
+    padding: 20px 0 20px 0;
+    }
+
+    .grid{
+        width: 325px;
+        height: 100%;
+    }
+
+
+    .heading{
+        width: 325px;
+        height: 360px;
+    }
+
+    .priceSection{
+        width: 325px;
+        border-radius: 0;
+        padding-bottom: 45px;
+        height: 290px;
+    }
+
+    .usSection{
+        width: 325px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .priceSection__btn{
+        width: 235px;
+    }
+}
